@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ======================================= */
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/* Header section */
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.img-logo {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.header-title {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0.66rem 0;
+}
+
+/* Banner section */
+
+.home-banner {
+  width: 100%;
+  height: 25rem;
+  background-image: url('../images/moto.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  /* height: 100%; */
+}
+
+.home-banner .container {
+  padding-top: 9rem;
+}
+
+.banner-items {
+  width: 23rem;
+  padding: 2rem 2rem;
+  background-color: black;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-items h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.banner-items h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+/* Navigaction section */
+
+nav {
+  background-color: firebrick;
+  width: 100%;
+  height: auto;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: white;
+}
+
+.mobile-nav {
+    display: none;
+}
+/* Products content section */
+
+content {
+  margin: 0 auto;
+  width: auto;
+}
+
+.prod-cont.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product {
+  padding: 2rem 1rem 4rem 1rem;
+  border: 4px solid black;
+  margin: 3rem 0;
+  width: 30%;
+  height: 15rem;
+  position: relative;
+}
+
+.prod-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  width: 100%;
+  display: inline-block;
+  background-color: black;
+  padding: 0.5rem;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.prod-img.pen {
+  background-image: url('../images/pen.png');
+}
+
+.prod-img.watch {
+  background-image: url('../images/watch.png');
+}
+
+.prod-img.glasses {
+  background-image: url('../images/glasses.png');
+}
+
+/* Business info content section */
+
+.business-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.info {
+  width: 35%;
+  text-align: left;
+  color: white;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  height: 3rem;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.sub-tit {
+  display: flex;
+  width: 100%;
+  background-color: lightgrey;
+  color: grey;
+  height: 2rem;
+  align-items: center;
+  padding-left: 0.25rem;
+}
+
+/* Footer section */
+
+footer {
+  width: 100%;
+  background-color: black;
+  height: 10rem;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .prod-glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .home-banner {
+    height: 15rem;
+  }
+
+  .banner-items {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .banner-items h4 {
+    font-size: 0.77rem;
+  }
+
+  .banner-items h1 {
+    font-size: 1rem;
+  }
+
+  .prod-cont.container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .prod-watch {
+    display: none;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .business-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
