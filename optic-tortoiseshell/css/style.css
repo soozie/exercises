@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    line-height: 1.4rem;
+    font-family: Helvetica;
+    width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 31rem;
+    padding-top: 1rem;
+}
+
+.img-main {
+    background-image: url('../images/glasses-bg.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.container-size {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.logo-title .title {
+  font-size: 1rem;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  color: white;
+}
+
+.menu span {
+  padding-left: 2rem;
+}
+
+.banner {
+  width: 100%;
+  height: 27rem;
+  position: relative;
+}
+
+.banner-box {
+  padding: 1.5rem 5rem;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  margin-top: -2.5rem;
+}
+
+.banner-text {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  display: inline;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service-box {
+  width: auto;
+  height: 8rem;
+  margin: 3rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-exams {
+  background-image: url('../images/paper-icon.png');
+  background-size: 3.5rem auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.img-fittings {
+  background-image: url('../images/ruler-icon.png');
+  background-size: 5rem auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.img-delivery {
+  background-image: url('../images/truck-icon.png');
+  background-size: 3.5rem auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.business-info {
+  display: flex;
+  flex-direction: raw;
+  justify-content: space-around;
+}
+
+.bus-box {
+  width: 35%;
+  margin: 0 5rem 5rem;
+}
+
+.bus-box h4 {
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: azure;
+  padding: 4rem;
+  text-align: center;
+  display: flex;
+}
+
+footer .img-logo {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
