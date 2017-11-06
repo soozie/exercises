@@ -1,6 +1,59 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 * {
   box-sizing: border-box;
 }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ======================================= */
+
 
 html {
     font-size: 18px;
@@ -70,6 +123,10 @@ header {
   padding-left: 2rem;
 }
 
+.hidden-home {
+  display: none;
+}
+
 .banner {
   width: 100%;
   height: 27rem;
@@ -137,7 +194,7 @@ header {
 
 .business-info {
   display: flex;
-  flex-direction: raw;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -168,4 +225,105 @@ footer .img-logo {
   background-repeat: no-repeat;
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner-box {
+    right: 2rem;
+    padding: 1rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .logo-title .title {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hidden-home {
+    display: flex;
+    text-align: right;
+    padding-left: 2rem;
+    color: white;
+  }
+
+  .container-size {
+    width: auto;
+  }
+
+  main {
+    height: 17rem;
+    padding-top: 0;
+  }
+
+  .img-main {
+    background-position: 20%;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner-box {
+    padding: 0.75rem 4rem;
+    width: 100%;
+    right: 0;
+    text-align: center;
+    margin-top: 9rem;
+    position: static;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+    margin: 3.77rem;
+  }
+
+  .service-box {
+    margin: 1.54rem;
+    font-size: 0.77rem;
+  }
+
+  .business-info {
+    flex-direction: column;
+  }
+
+  .bus-box {
+    width: 100%;
+    margin: 0;
+  }
+
+  .bus-box p {
+    margin-bottom: 4rem;
+    font-size: 0.77rem;
+    padding: 0 0.5rem;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .title {
+    display: none;
+  }
+
 }
